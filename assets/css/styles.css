@@ -405,3 +405,8 @@ a.brand-tile.dark:hover .tile-name { color: #9FD8BF; }
 }
 table { border-collapse: collapse; width: 100%; margin-bottom: 1.2rem; }
 th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--line); }
+
+/* text-fallback brand tiles (no logo available) */
+.brand-tile .tile-wordmark { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; }
+.brand-tile .tile-wordmark .dots i { width: 9px; height: 9px; }
+.brand-tile .tile-wordmark b { font-size: 1.02rem; line-height: 1.25; letter-spacing: -.01em; color: var(--charcoal); }
