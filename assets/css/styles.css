@@ -410,3 +410,16 @@ th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--
 .brand-tile .tile-wordmark { display: flex; flex-direction: column; align-items: center; gap: .5rem; text-align: center; }
 .brand-tile .tile-wordmark .dots i { width: 9px; height: 9px; }
 .brand-tile .tile-wordmark b { font-size: 1.02rem; line-height: 1.25; letter-spacing: -.01em; color: var(--charcoal); }
+
+/* large brand cards with blurbs (brands + budtenders pages) */
+.brand-grid-lg { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2.5vw, 1.6rem); }
+@media (max-width: 980px) { .brand-grid-lg { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .brand-grid-lg { grid-template-columns: 1fr; } }
+.brand-grid-lg > * { min-width: 0; }
+.bgl-card h3 { margin: .2rem 0 .15rem; font-size: 1.15rem; }
+.bgl-card p { font-size: .95rem; }
+.bgl-media { height: 150px; display: flex; align-items: center; justify-content: center; background: var(--paper-warm); border-radius: 10px; margin-bottom: .8rem; padding: 1rem; }
+.bgl-media img { max-height: 120px; width: auto; max-width: 100%; object-fit: contain; }
+.bgl-media.bgl-word { flex-direction: column; gap: .6rem; text-align: center; }
+.bgl-media.bgl-word b { font-size: 1.2rem; letter-spacing: -.01em; color: var(--charcoal); }
+.bgl-media.bgl-word .dots i { width: 11px; height: 11px; }
